@@ -1,0 +1,120 @@
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context=".MainActivity"
+    android:background="#ffd7d7d7"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:paddingBottom="@dimen/activity_vertical_margin">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="40sp"
+        android:background="#ff1f3aff"
+        android:id="@+id/textView_title"
+        android:textStyle="bold"
+        android:textColor="#ffff7904"
+        android:text="Conversor"
+        android:gravity="center" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <TextView
+            android:id="@+id/textView_inputEuros"
+            android:text="Euros:"
+            android:textColor="#ff1f3aff"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp" />
+
+        <EditText
+            android:id="@+id/editText_euros"
+            android:inputType="numberDecimal"
+            android:text="0,00"
+            android:textColor="#ffff7904"
+            android:ems="10"
+            android:singleLine="true"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:gravity="center" />
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/textView_convert"
+        android:text="Convertir a:"
+        android:textColor="#ff1f3aff"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp" />
+
+    <RadioGroup
+        android:id="@+id/rbGroup"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="13dp"
+        android:gravity="center">
+        <RadioButton
+            android:id="@+id/radioButton_dollar"
+            android:text="Dòlars ($)"
+            android:textColor="#ff1f3aff"
+            android:checked="false"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingRight="5dp" />
+
+        <RadioButton
+            android:id="@+id/radioButton_pound"
+            android:text="Lliures (£)"
+            android:textColor="#ff1f3aff"
+            android:checked="false"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingRight="5dp" />
+
+        <RadioButton
+            android:id="@+id/radioButton_yen"
+            android:text="Yens (¥)"
+            android:textColor="#ff1f3aff"
+            android:checked="false"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+    </RadioGroup>
+
+    <CheckBox
+        android:id="@+id/checkBox_exactValue"
+        android:text="Valor exacte"
+        android:textColor="#ff1f3aff"
+        android:checked="false"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp" />
+
+    <Button
+        android:id="@+id/button_convert"
+        android:text="Convertir"
+        android:textColor="#ff1f3aff"
+        android:background="#ffff7904"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp" />
+
+    <TextView
+        android:id="@+id/textView_result"
+        android:textColor="#ffff7904"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:gravity="center" />
+
+</LinearLayout>
